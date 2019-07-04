@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+
+    <title>Hello, world!</title>
+
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-md fixed-top header-navbar navbar-light">
+  
+  <div class="container">
+	  <a class="navbar-brand" href="#">ART</a>
+	  <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggler pull-left"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span></button>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    –––
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Цены</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Топливо 1</a>
+                  <a class="dropdown-item" href="#">Топливо 2</a>
+                  <a class="dropdown-item" href="#">Топливо 3</a>
+                  <a class="dropdown-item" href="#">Топливо 4</a>
+                  <a class="dropdown-item" href="#">Топливо 5</a>
+        </div>     
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Услуги</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Услуга 1</a>
+                  <a class="dropdown-item" href="#">Услуга 2</a>
+                  <a class="dropdown-item" href="#">Услуга 3</a>
+                  <a class="dropdown-item" href="#">Услуга 4</a>
+                  <a class="dropdown-item" href="#">Услуга 5</a>
+        </div>     
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">О компании</a>
+        <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Прреимущества</a>
+                  <a class="dropdown-item" href="#">Автопарк</a>
+                  <a class="dropdown-item" href="#">Отзывы</a>
+                  <a class="dropdown-item" href="#">Доставка и оплата</a>
+                  <a class="dropdown-item" href="#">Документы</a>
+                  <a class="dropdown-item" href="#">Нефтебазы</a>
+        </div>     
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Контакты</a>
+      </li>
+    </ul>
+  –––
+    <div class="d-none d-md-block col-md-3 col-lg-2 text-right text-white phone-layers"><?=strip_tags($phone, '<a><br>')?></div>
+    <div class="d-none d-lg-block col-lg-3 text-white text-center">
+      <div class="row">
+        <div class="col-12"><?=strip_tags($time, '<br>')?></div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-3 text-white call-phone text-center"><a href="#" data-toggle="modal" data-target="#recall">Обратный звонок&nbsp;<img src="<?=get_template_directory_uri()?>/images/telephone-icon-png-1.png"></a></div>
+  </div>
+</nav>
+
+	<div class="container-fluid layer-header layer-new-back pt-5 pb-5">
+		<div class="container text-center text-lg-left">
+	    	<h1 class="mb-3 f-lit">Закажи шарж в подарок!</h1>
+	    	<div class="mb-4">Удобен для любого торжественного момента. Доставка по всей России.</div>
+	    	<button type="button" class="btn btn-warning btn-lg btn-block f-lit">Заказать шарж</button>
+		</div>	
+	</div>
+
+	<div class="container-fluid layer-why-we pt-5 pb-5">
+		<div class="container text-center text-lg-left">
+	    	<h2 class="mb-3 f-lit">Категории</h2>
+	    	<div class="mb-4">
+– Юбилеи <br>
+– День рождения<br>
+– Вечеринки <br>
+– Свадьбы <br>
+– Выпускные вечеринки <br>
+– Праздничные вечеринки <br>
+– Выпускные вечеринки <br>
+– Семейные карикатуры<br>
+– Школьные мероприятия <br>
+
+	    	</div>
+	    	<button type="button" class="btn btn-warning btn-lg btn-block f-lit">Заказать шарж</button>
+		</div>	
+	</div>
+
+	<div class="container-fluid layer-header pt-5 pb-5">
+		<div class="container text-center text-lg-left">
+	    	<h1 class="mb-3 f-lit">Почему именно мы?</h1>
+	    	<div class="mb-4">Удобен для любого торжественного момента. Доставка по всей России.</div>
+	    	<button type="button" class="btn btn-warning btn-lg btn-block f-lit">Заказать шарж</button>
+		</div>	
+	</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

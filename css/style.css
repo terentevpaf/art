@@ -1,0 +1,47 @@
+body {
+	padding-top: 65px;
+}
+
+.layer-header {
+	background-color: #f9ffdc;
+}
+
+.layer-new-back {
+	background-color: #fffce5;
+}
+
+.f-lit {
+	font-family: 'Literata', serif;
+}
+
+.header-navbar {
+	background-color: #FFFFFF;
+}
+
+.navbar-brand {
+	font-family: 'Literata', serif;
+	font-size: 24px;
+}
+
+.navbar-toggler {
+    width: 30px;
+    margin: 10px 0;
+    line-height: .4;
+    outline: 0;
+    z-index: 100;
+    padding: 0;
+    border-color: #FFFFFF!important;
+}
+
+.navbar-toggler
+{
+	outline: none!important;
+}
+
+.navbar-toggler .bar1, .navbar-toggler .bar2, .navbar-toggler .bar3 {
+    width: 100%;
+    height: 2px;
+    background-color: #444444;
+    display: inline-block;
+    vertical-align: middle;
+}
