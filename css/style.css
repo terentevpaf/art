@@ -2,6 +2,63 @@ body {
 	padding-top: 65px;
 }
 
+h1
+{
+    font-size: 2.3rem;
+}
+
+.layer-exm h2
+{
+    font-size: 24px;
+    background-color: rgba(255, 232, 0, 0.25);
+    padding: 13px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px #dacb3c;
+}
+
+.layer-exm h2::first-letter {
+    color: red;
+}
+
+.seporator
+{
+    position: relative;
+}
+
+.seporator::before 
+{
+    content: "";
+    left: 0;
+    right: 0;
+    top: 140%;
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("https://izhevsk.soho.menu/bitrix/templates/soho/css/../images/separator-wave.svg");
+}
+
+.seporator2
+{
+    height: 30px;
+    position: relative;
+}
+
+.seporator2::before 
+{
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 7px;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("https://izhevsk.soho.menu/bitrix/templates/soho/css/../images/separator-wave.svg");
+}
+
 .layer-header {
 	background-color: #f9ffdc;
 }
@@ -44,4 +101,142 @@ body {
     background-color: #444444;
     display: inline-block;
     vertical-align: middle;
+}
+
+.exms {
+    margin-bottom: 30px;
+}
+
+.img-cat
+{
+    width: 100%;
+    height: 415px;
+    background-size: cover;
+    background-image: url("../images/1.jpg");
+    border-radius: 6px;
+}
+
+.img-cat2 
+{
+    width: 100%;
+    height: 415px;
+    background-size: cover;
+    background-image: url("../images/2.jpg");
+    border-radius: 6px;
+}
+
+.img-exm 
+{
+    margin: 1px;
+    display: inline-block;
+    width: 120px;
+    height: 150px;
+    background-size: cover;
+    background-image: url("../images/1.jpg");
+}
+
+.img-exm2 
+{
+    margin: 1px;
+    display: inline-block;
+    width: 120px;
+    height: 150px;
+    background-size: cover;
+    background-image: url("../images/2.jpg");
+}
+
+
+
+
+
+.modal-backdrop.show
+{
+    opacity: 0.9;
+}
+
+.navbar-toggle {
+  float: left !important;
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+.modal-up  .modal-content {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+.modal-up  .modal-body ul {
+  margin-top: 100px; 
+}
+
+.modal-up  .modal-body ul {
+  list-style-type: none;
+  color: white;
+  /*margin: 0;*/
+  padding: 0;
+  width: 100%;
+}
+
+.modal-up  .modal-body ul li {
+  text-align: center;
+  font-size: 160%;
+  padding: 16px;
+  text-transform: uppercase;
+}
+
+.modal-up  .modal-body ul li a {
+  color: #FFFFFF;
+}
+
+
+.modal-up .modal-context 
+{
+    background-color: #FFFFFF;
+    margin-top: 100px;
+    border-radius: 4px;
+    padding: 20px 20px 30px 20px;
+}
+
+.modal-up .modal-title
+{
+    font-size: 160%;
+    margin-bottom: 20px;
+}
+
+#modal-order {
+    text-align: center;
+}
+
+
+.modal-up button {
+    border: none;
+}
+
+.modal-up .navbar-toggler .bar1, .modal-up .navbar-toggler .bar2, .modal-up .navbar-toggler .bar3 {
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.modal-up .bar1 {
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: -8px;
+}
+
+.modal-up .bar2 {
+    display: none!important;
+}
+
+.modal-up .bar3 {
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-top: -8px;
 }

@@ -15,11 +15,55 @@
   </head>
   <body>
 
+  <noindex>
+  <!-- Modal -->
+  <div class="modal-up modal fade" id="nav-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+  		<button data-toggle="modal" data-target="#nav-modal" type="button" class="navbar-toggler float-right"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span></button>
+          <ul class="f-lit">
+            <li><a href="#s">Главная</a></li>
+            <li><a href="#s">Информация</a></li>
+            <li><a href="#s">Статьи</a></li>
+            <li><a href="#s">О нас</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </noindex>
+
+  <noindex>
+  <!-- Modal -->
+  <div class="modal-up modal fade" id="modal-order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body f-lit">
+  		<button data-toggle="modal" data-target="#modal-order" type="button" class="navbar-toggler float-right"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span></button>
+          <div class="modal-context">
+          	<div class="modal-title">Настройки заказа</div>
+          	<div class="mb-2">Количество персонажей:</div>
+          	<div class="mb-2">2</div>
+          	<div class="modal-title">Оформление заказа</div>
+          	<div class="mb-2">Фон:</div>
+          	<div class="mb-2">Один цвет, без цвета, тематический фон</div>
+          	<div class="mb-2">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
+          	<div class="mb-2">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
+          	<div class="mb-2">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
+          	<div class="mb-2">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </noindex>
+
   <nav class="navbar navbar-expand-md fixed-top header-navbar navbar-light">
   
   <div class="container">
 	  <a class="navbar-brand" href="#">ART</a>
-	  <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggler pull-left"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span></button>
+	  <button data-toggle="modal" data-target="#nav-modal" type="button" class="navbar-toggler collapsed" aria-expanded="false"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span></button>
   </div>
 
   <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -79,6 +123,58 @@
 	    	<h1 class="mb-3 f-lit">Закажи шарж в подарок!</h1>
 	    	<div class="mb-4">Удобен для любого торжественного момента. Доставка по всей России.</div>
 	    	<button type="button" class="btn btn-warning btn-lg btn-block f-lit">Заказать шарж</button>
+		</div>	
+	</div>
+
+	<div class="container-fluid layer-exm pt-5">
+		<div class="container text-center text-lg-left">
+	    	<h1 class="mb-5 f-lit seporator">Категории</h1>
+	    	<div class="exms">
+		    	<div class="mb-3"><h2 class="f-lit">Тематическая</h2></div>
+		    	<div class="mb-4">
+		    		<div class="img-cat"></div>
+		    	</div>
+		    	<button type="button" data-target="#modal-order" class="btn btn-warning btn-lg btn-block f-lit">Выбрать этот вариант</button>
+	    	</div>
+	    	<div class="seporator2"></div>
+	    	<div class="exms">
+		    	<div class="mb-3"><h2 class="f-lit">Семейная</h2></div>
+		    	<div class="mb-4">
+		    		<div class="img-cat2"></div>
+		    	</div>
+		    	<button type="button" data-target="#modal-order" class="btn btn-warning btn-lg btn-block f-lit">Выбрать этот вариант</button>
+	    	</div>
+	    	<div class="seporator2"></div>
+	    	<div class="exms">
+		    	<div class="mb-3"><h2 class="f-lit">Свадебная</h2></div>
+		    	<div class="mb-4">
+		    		<div class="img-cat"></div>
+		    	</div>
+		    	<button type="button" data-target="#modal-order" class="btn btn-warning btn-lg btn-block f-lit">Выбрать этот вариант</button>
+	    	</div>
+	    	<div class="seporator2"></div>
+	    	<div class="exms">
+		    	<div class="mb-3"><h2 class="f-lit">Индивидуальная</h2></div>
+		    	<div class="mb-4">
+		    		<div class="img-cat"></div>
+		    	</div>
+		    	<button type="button" data-toggle="modal" data-target="#modal-order" class="btn btn-warning btn-lg btn-block f-lit">Выбрать этот вариант</button>
+	    	</div>
+		</div>	
+	</div>
+
+	<div class="container-fluid layer-exm pt-5">
+		<div class="container text-center text-lg-left">
+	    	<h1 class="mb-5 f-lit seporator">Примеры работ</h1>
+	    	<div class="mb-4">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
+		    <div class="mb-4">
+		    	<div class="img-exm"></div>
+		    	<div class="img-exm2"></div>
+		    	<div class="img-exm"></div>
+		    	<div class="img-exm2"></div>
+		    	<div class="img-exm"></div>
+		    	<div class="img-exm2"></div>
+		    </div>
 		</div>	
 	</div>
 
