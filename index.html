@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+
+	<link href="fontawesome-free-5.10.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->
 
     <title>Hello, world!</title>
 
@@ -42,16 +45,36 @@
         <div class="modal-body f-lit">
   		<button data-toggle="modal" data-target="#modal-order" type="button" class="navbar-toggler float-right"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span></button>
           <div class="modal-context">
+          	<form>
           	<div class="modal-title">Настройки заказа</div>
           	<div class="mb-2">Количество персонажей:</div>
+
           	<div class="mb-2">2</div>
           	<div class="modal-title">Оформление заказа</div>
-          	<div class="mb-2">Фон:</div>
-          	<div class="mb-2">Один цвет, без цвета, тематический фон</div>
+          	<div>
+          		<div class="modal-label">Фон</div>
+				<div class="modal-border mb-2">
+					<div class="custom-control custom-radio mb-2">
+					  <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required checked>
+					  <label class="custom-control-label" for="customControlValidation2">Один цвет</label>
+					</div>
+					<div class="custom-control custom-radio mb-2">
+					  <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+					  <label class="custom-control-label" for="customControlValidation3">Без цвета</label>
+					  <div class="invalid-feedback">More example invalid feedback text</div>
+					</div>
+					<div class="custom-control custom-radio">
+					  <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+					  <label class="custom-control-label" for="customControlValidation3">Тематический фон</label>
+					  <div class="invalid-feedback">More example invalid feedback text</div>
+					</div>
+				</div>          		
+          	</div>
           	<div class="mb-2">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
           	<div class="mb-2">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
           	<div class="mb-2">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
           	<div class="mb-2">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
+          	</form>
           </div>
         </div>
       </div>
@@ -120,21 +143,30 @@
 
 	<div class="container-fluid layer-header layer-new-back pt-5 pb-5">
 		<div class="container text-center text-lg-left">
+			<!-- <div><i class="f-gift"></i></div> -->
 	    	<h1 class="mb-3 f-lit">Закажи шарж в подарок!</h1>
 	    	<div class="mb-4">Удобен для любого торжественного момента. Доставка по всей России.</div>
 	    	<button type="button" class="btn btn-warning btn-lg btn-block f-lit">Заказать шарж</button>
 		</div>	
 	</div>
 
-	<div class="container-fluid layer-exm pt-5">
-		<div class="container text-center text-lg-left">
-	    	<h1 class="mb-5 f-lit seporator">Категории</h1>
+	<div class="container-fluid layer-exm pt-5 plr0">
+		<div class="container text-center text-lg-left plr0">
+			<div><i class="f-theme"></i></div>
+	    	<h3 class="mb-2 f-lit seporator"><span>Тематика шаржа</span></h3>
+	    	<div class="mb-4 plr15">Выбор тематики зависит от события, на котором будет подарен подарок.</div>
 	    	<div class="exms">
-		    	<div class="mb-3"><h2 class="f-lit">Тематическая</h2></div>
-		    	<div class="mb-4">
-		    		<div class="img-cat"></div>
+	    		<div class="plr15">
+			    	<div class="mb-3"><h2 class="f-lit">Индивидуальная</h2></div>
+			    	<div>Чтобы подчеркнуть уникальность шаржа идеально подойдет выбор индивидуального стиля.</div>
+			    	<div class="mb-4">
+			    		<div class="img-cat"></div>
+			    	</div>
 		    	</div>
-		    	<button type="button" data-target="#modal-order" class="btn btn-warning btn-lg btn-block f-lit">Выбрать этот вариант</button>
+		    	<div class="plr30 backf7">
+		    		<!-- <button type="button" data-target="#modal-order" class="btn btn-warning btn-lg btn-block f-lit">Выбрать этот вариант</button> -->
+		    		<button type="button" class="button-select-theme">Хочу этот вариант</button>
+		    	</div>
 	    	</div>
 	    	<div class="seporator2"></div>
 	    	<div class="exms">
