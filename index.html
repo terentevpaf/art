@@ -8,10 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/opensans/opensans.css">
 	<link href="https://fonts.googleapis.com/css?family=Literata&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet"> -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
 
-	<link href="fontawesome-free-5.10.0-web/css/all.css" rel="stylesheet"> <!--load all styles -->
 
     <title>Hello, world!</title>
 
@@ -48,28 +49,54 @@
           	<form>
           	<div class="modal-title">Настройки заказа</div>
           	<div class="mb-2">Количество персонажей:</div>
-
-          	<div class="mb-2">2</div>
-          	<div class="modal-title">Оформление заказа</div>
-          	<div>
-          		<div class="modal-label">Фон</div>
-				<div class="modal-border mb-2">
-					<div class="custom-control custom-radio mb-2">
-					  <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required checked>
-					  <label class="custom-control-label" for="customControlValidation2">Один цвет</label>
-					</div>
-					<div class="custom-control custom-radio mb-2">
-					  <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
-					  <label class="custom-control-label" for="customControlValidation3">Без цвета</label>
-					  <div class="invalid-feedback">More example invalid feedback text</div>
-					</div>
-					<div class="custom-control custom-radio">
-					  <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
-					  <label class="custom-control-label" for="customControlValidation3">Тематический фон</label>
-					  <div class="invalid-feedback">More example invalid feedback text</div>
-					</div>
-				</div>          		
-          	</div>
+            <div class="mb-3">
+            <input type="number" name="count" value="1" min="1" max="20" class="form-control form-control-lg">
+            <small id="passwordHelpBlock" class="form-text text-muted">
+           Укажите количество персонажей от 1 до 20 
+            </small>
+            </div>
+            <div class="mb-2">Тематика:</div>
+            <div class="mb-3">
+            <select class="form-control form-control-lg">
+              <option></option>
+              <option>День рождения</option>
+              <option>Юбилеи</option>
+              <option>Вечеринки</option>
+              <option>Свадьбы</option>
+              <option>Выпускные вечеринки</option>
+              <option>Праздничные вечеринки</option>
+              <option>Выпускные вечеринки</option>
+              <option>Семейные карикатур</option>
+              <option>Школьные мероприятия</option>
+            </select>
+            <small class="form-text text-muted">Укажите тематику события</small>
+            </div>
+            <div class="mb-2">Фон:</div>
+    				<div class="modal-border">
+    					<div class="custom-control custom-radio mb-2 radio icheck-orange">
+    					  <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio-stacked" required checked>
+    					  <label class="custom-control-label" for="customControlValidation1">Один цвет</label>
+    					</div>
+    					<div class="custom-control custom-radio mb-2 radio icheck-orange">
+    					  <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+    					  <label class="custom-control-label" for="customControlValidation2">Без цвета</label>
+    					</div>
+              <div class="custom-control custom-radio mb-2 radio icheck-orange">
+                <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                <label class="custom-control-label" for="customControlValidation3">Индивидуальный</label>
+              </div>
+    					<div class="custom-control custom-radio mb-2 radio icheck-orange">
+    					  <input type="radio" class="custom-control-input" id="customControlValidation4" name="radio-stacked" required>
+    					  <label class="custom-control-label" for="customControlValidation4">Соответствующий тематике</label>
+    					</div>
+    				</div> 
+            <div class="mb-3"><small id="emailHelp" class="form-text text-muted">Основной элемент шаржа, который задает настроение</small>
+            </div>
+            <div class="form-group mb-3">
+                <label for="exampleFormControlTextarea1">Комментарий: </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>       		
           	<div class="mb-2">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
           	<div class="mb-2">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
           	<div class="mb-2">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
@@ -83,7 +110,7 @@
   </noindex>
 
   <nav class="navbar navbar-expand-md fixed-top header-navbar navbar-light">
-  
+
   <div class="container">
 	  <a class="navbar-brand" href="#">ART</a>
 	  <button data-toggle="modal" data-target="#nav-modal" type="button" class="navbar-toggler collapsed" aria-expanded="false"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span></button>
@@ -141,65 +168,86 @@
   </div>
 </nav>
 
-	<div class="container-fluid layer-header layer-new-back pt-5 pb-5">
+	<div class="container-fluid layer-header layer-new-back pt-5 pb-5 mb-5">
 		<div class="container text-center text-lg-left">
-			<!-- <div><i class="f-gift"></i></div> -->
 	    	<h1 class="mb-3 f-lit">Закажи шарж в подарок!</h1>
 	    	<div class="mb-4">Удобен для любого торжественного момента. Доставка по всей России.</div>
-	    	<button type="button" class="btn btn-warning btn-lg btn-block f-lit">Заказать шарж</button>
+	    	<button type="button" class="button-order"><span class="f-cursor"></span>Заказать шарж</button>
+        <!-- <button type="button" class="btn btn-warning btn-lg btn-block f-lit button-order">Заказать шарж</button> -->
 		</div>	
 	</div>
-
-	<div class="container-fluid layer-exm pt-5 plr0">
+  <!-- <div class="pattern"></div> -->
+	<div class="container-fluid layer-exm pt-1 plr0">
 		<div class="container text-center text-lg-left plr0">
-			<div><i class="f-theme"></i></div>
+			<div><i class="f-image f-theme"></i></div>
 	    	<h3 class="mb-2 f-lit seporator"><span>Тематика шаржа</span></h3>
-	    	<div class="mb-4 plr15">Выбор тематики зависит от события, на котором будет подарен подарок.</div>
+	    	<div class="mb-5 plr15">Выбор тематики зависит от события, на котором будет подарен подарок.</div>
+        <div class="seporator2"></div>
 	    	<div class="exms">
 	    		<div class="plr15">
-			    	<div class="mb-3"><h2 class="f-lit">Индивидуальная</h2></div>
-			    	<div>Чтобы подчеркнуть уникальность шаржа идеально подойдет выбор индивидуального стиля.</div>
+            <div><i class="f-image f-creativity"></i></div>
+			    	<div class="mb-3"><h2 class="f-open title-two"><span>Индивидуальная</span></h2></div>
+			    	<div>Чтобы подчеркнуть уникальность шаржа, идеально подойдет выбор индивидуального стиля.</div>
 			    	<div class="mb-4">
 			    		<div class="img-cat"></div>
 			    	</div>
 		    	</div>
-		    	<div class="plr30 backf7">
-		    		<!-- <button type="button" data-target="#modal-order" class="btn btn-warning btn-lg btn-block f-lit">Выбрать этот вариант</button> -->
-		    		<button type="button" class="button-select-theme">Хочу этот вариант</button>
+		    	<div class="plr30">
+		    		<button type="button" class="button-select-theme" data-toggle="modal" data-target="#modal-order"><span class="f-cursor"></span>Хочу этот вариант</button>
 		    	</div>
 	    	</div>
 	    	<div class="seporator2"></div>
-	    	<div class="exms">
-		    	<div class="mb-3"><h2 class="f-lit">Семейная</h2></div>
-		    	<div class="mb-4">
-		    		<div class="img-cat2"></div>
-		    	</div>
-		    	<button type="button" data-target="#modal-order" class="btn btn-warning btn-lg btn-block f-lit">Выбрать этот вариант</button>
-	    	</div>
+        <div class="exms">
+          <div class="plr15">
+            <div><i class="f-image f-family"></i></div>
+            <div class="mb-3"><h2 class="f-open title-two"><span>Семейная</span></h2></div>
+            <div>Чтобы подчеркнуть уникальность шаржа, идеально подойдет выбор индивидуального стиля.</div>
+            <div class="mb-4">
+              <div class="img-cat2"></div>
+            </div>
+          </div>
+          <div class="plr30">
+            <button type="button" class="button-select-theme"><span class="f-cursor"></span>Хочу этот вариант</button>
+          </div>
+        </div>
 	    	<div class="seporator2"></div>
-	    	<div class="exms">
-		    	<div class="mb-3"><h2 class="f-lit">Свадебная</h2></div>
-		    	<div class="mb-4">
-		    		<div class="img-cat"></div>
-		    	</div>
-		    	<button type="button" data-target="#modal-order" class="btn btn-warning btn-lg btn-block f-lit">Выбрать этот вариант</button>
-	    	</div>
+        <div class="exms">
+          <div class="plr15">
+            <div><i class="f-image f-rings"></i></div>
+            <div class="mb-3"><h2 class="f-open title-two"><span>Свадебная</span></h2></div>
+            <div>Чтобы подчеркнуть уникальность шаржа, идеально подойдет выбор индивидуального стиля.</div>
+            <div class="mb-4">
+              <div class="img-cat"></div>
+            </div>
+          </div>
+          <div class="plr30">
+            <button type="button" class="button-select-theme"><span class="f-cursor"></span>Хочу этот вариант</button>
+          </div>
+        </div>
 	    	<div class="seporator2"></div>
-	    	<div class="exms">
-		    	<div class="mb-3"><h2 class="f-lit">Индивидуальная</h2></div>
-		    	<div class="mb-4">
-		    		<div class="img-cat"></div>
-		    	</div>
-		    	<button type="button" data-toggle="modal" data-target="#modal-order" class="btn btn-warning btn-lg btn-block f-lit">Выбрать этот вариант</button>
-	    	</div>
+        <div class="exms">
+          <div class="plr15">
+            <div><i class="f-image f-cake"></i></div>
+            <div class="mb-3"><h2 class="f-open title-two"><span>День рождения</span></h2></div>
+            <div>Чтобы подчеркнуть уникальность шаржа, идеально подойдет выбор индивидуального стиля.</div>
+            <div class="mb-4">
+              <div class="img-cat2"></div>
+            </div>
+          </div>
+          <div class="plr30">
+            <button type="button" class="button-select-theme"><span class="f-cursor"></span>Хочу этот вариант</button>
+          </div>
+        </div>
 		</div>	
 	</div>
 
-	<div class="container-fluid layer-exm pt-5">
-		<div class="container text-center text-lg-left">
-	    	<h1 class="mb-5 f-lit seporator">Примеры работ</h1>
-	    	<div class="mb-4">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
-		    <div class="mb-4">
+	<div class="container-fluid art-example pt-5 pb-5 plr0">
+		<div class="container text-center text-lg-left plr0">
+        <div><i class="f-image f-paint-palette"></i></div>
+	    	<h2 class="mb-2 f-lit seporator">Примеры работ</h2>
+	    	<div class="mb-4 plr15">За 40 лет работ выполено более 5000 работ, это счистливые обладатели лялял</div>
+        <!-- <div class="seporator2"></div> -->
+		    <div class="mt-4 mb-4">
 		    	<div class="img-exm"></div>
 		    	<div class="img-exm2"></div>
 		    	<div class="img-exm"></div>
@@ -207,15 +255,18 @@
 		    	<div class="img-exm"></div>
 		    	<div class="img-exm2"></div>
 		    </div>
-		</div>	
+        <div class="">
+          <button type="button" class="button-more"><span class="f-cursor"></span>Запросить больше работ</button>
+        </div>
+		</div>
 	</div>
 
 	<div class="container-fluid layer-why-we pt-5 pb-5">
 		<div class="container text-center text-lg-left">
-	    	<h2 class="mb-3 f-lit">Категории</h2>
+	    	<h2 class="mb-3 f-lit">Шарж подойдет для любых событий</h2>
 	    	<div class="mb-4">
-– Юбилеи <br>
 – День рождения<br>
+– Юбилеи <br>
 – Вечеринки <br>
 – Свадьбы <br>
 – Выпускные вечеринки <br>
@@ -223,16 +274,14 @@
 – Выпускные вечеринки <br>
 – Семейные карикатуры<br>
 – Школьные мероприятия <br>
-
 	    	</div>
-	    	<button type="button" class="btn btn-warning btn-lg btn-block f-lit">Заказать шарж</button>
 		</div>	
 	</div>
 
 	<div class="container-fluid layer-header pt-5 pb-5">
 		<div class="container text-center text-lg-left">
-	    	<h1 class="mb-3 f-lit">Почему именно мы?</h1>
-	    	<div class="mb-4">Удобен для любого торжественного момента. Доставка по всей России.</div>
+	    	<h2 class="mb-3 f-lit">Почему именно мы?</h2>
+	    	<div class="mb-4 plr15">Удобен для любого торжественного момента. Доставка по всей России.</div>
 	    	<button type="button" class="btn btn-warning btn-lg btn-block f-lit">Заказать шарж</button>
 		</div>	
 	</div>
